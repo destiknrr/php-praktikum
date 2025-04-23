@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Desti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <header>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="about.html">About Me &#129321;</a></li>
+                <li><a href="education.html">Portofolio  &#128196;</a></li>
+                <li><a href="contact.html">Contact Me &#128222;</a></li>
+            </ul>
+            <div class="logo" data-aos="fade-up" data-aos-delay="100">
+                <a href="index.html" data-aos="fade-down-right">
+                    <img src="img/logo.png" height="25">
+                </a>
+            </div>
+            <ul data-aos="fade-down-right">
+                <li class="hideOnMobile" data-aos="fade-up" data-aos-delay="200"><a href="about.html">About Me &#129321;</a></li>
+                <li class="hideOnMobile" data-aos="fade-up" data-aos-delay="300"><a href="education.html">Portofolio &#128196;</a></li>
+                <li class="hideOnMobile" data-aos="fade-up" data-aos-delay="400"><a href="contact.html">Contact Me &#128222;</a></li>
+                <li class="menu-bottom" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul> 
+        </header>
+    </nav>
+    
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="row">
+                <div class="col-8 text-justify" data-aos="fade-right" style="position: relative; top: 100px;">
+                    <h1 class="typing-container" style="font-size:xx-large;"> Hello I'm <span class="text-highlight"> Desti,
+                     </span> <span class="typewriter-text" id="home-typewriter"> </span> </h1>
+                    <p style="margin-bottom: 35px ;"> My name is Desti Karmini Nurdatillah,
+                        i'm a student of Informatics at Universitas Siliwangi. <br>
+                        Let’s get to know more about me!
+                    </p>
+                    <a type="button" class="btn white" href="about.html"> See More About Me! &#128640; </a>
+                </div>
+                <div class="col-4" data-aos="fade-left" style="margin-top: 75px;">
+                    <img src="img/egg.gif" alt="Animated egg" class="img-reponsive egg-gif "/>
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <hr>
+
+        <!-- About Secction -->
+        <section id="about">
+            <div class="row">
+                <h2 class="text-center" data-aos="fade-in">
+                    &#129321; It's more <span class="text-highlight"> about </span> Me!
+                </h2>
+                <div class="col-4" data-aos="fade-right">
+                    <img src="img/me1.png" class="img-reponsive img-about" style="border-radius: 15px;">
+                </div>
+                <div class="col-8" data-aos="fade-left">
+                    <p class="text-justify">
+                        Hello! My name is Desti Karmini Nurdatillah, I am 20 years old, and I am currently a student majoring in Computer Science at Universitas Siliwangi. Ever since I was first introduced to the world of computers, I have been deeply fascinated by technology, especially in the fields of programming and software development. There always seems to be something new to learn and exciting challenges waiting at every step. Each project or challenge I face provides an opportunity to learn more and apply my knowledge in real-world situations. I enjoy the problem-solving process, which sharpens my technical skills, as well as collaborating with like-minded individuals who share a similar vision. I believe that my learning journey is just beginning, and I am really excited to see where it will take me. So, let’s get to know each other better and share ideas!
+                    </p>
+                    <a type="button" class="btn white" href="files/CV-Desti.pdf"> Download CV &#128195;</a>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-in">
+                    <h3> Quotes </h3>
+                    <p>
+                        "The only way to do great work is to love what you do." - Steve Jobs
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="text-center" data-aos="fade-in">
+                    &#128165; Tech Stack That  I Use
+                </h2>
+                <div class="col-3 text-center" data-aos="flip-left">
+                    <div class="card text-center bg-grey">
+                        <i class="fa-brands fa-html5 icon-tech"></i>
+                        <p>HTML</p>
+                        <br>
+                        <div class="progress-container">
+                            <div class="progress-bar-html">80%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 text-center" data-aos="flip-left">
+                    <div class="card text-center bg-grey">
+                        <i class="fa-brands fa-css3-alt icon-tech"></i>
+                        <p>CSS</p>
+                        <br>
+                        <div class="progress-container">
+                            <div class="progress-bar-css">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" data-aos="flip-left"> 
+                    <div class="card text-center bg-grey">
+                        <i class="fa-brands fa-js icon-tech"></i>
+                        <p>JS</p>
+                        <br>
+                        <div class="progress-container">
+                            <div class="progress-bar-js">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" data-aos="flip-left">
+                    <div class="card text-center bg-grey">
+                        <i class="fa-brands fa-php icon-tech"></i>
+                        <p>PHP</p>
+                        <br>
+                        <div class="progress-container">
+                            <div class="progress-bar-php">30%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="row tex">
+                <h2 class="text-center" data-aos="fade-in">&#128269; Why Hire Me? </h2>
+                <div class="col-4" data-aos="fade-right">
+                    <div class="card-skill">
+                        <img src="img/skill3.png" class="img-reponsive img-round" style="border-radius: 15px;">
+                    </div>
+                    <h3>Leadership</h3>
+                    <p> lorem ipsum sit dolor amet lorem ipsum sit dolor ametlorem ipsum sit dolor ametlorem ipsum sit dolor ametlorem ipsum sit dolor amet</p>
+                </div>
+                <div class="col-4" data-aos="fade-right">
+                    <div class="card-skill">
+                        <img src="img/skill2.png" class="img-reponsive img-round" style="border-radius: 15px;">
+                    </div>
+                    <h3>Teamwork</h3>
+                    <p> lorem ipsum sit dolor amet lorem ipsum sit dolor ametlorem ipsum sit dolor ametlorem ipsum sit dolor ametlorem ipsum sit dolor amet</p>
+                </div>
+                <div class="col-4" data-aos="fade-right">
+                    <div class="card-skill">
+                        <img src="img/skill1.png" class="img-reponsive img-round" style="border-radius: 15px;">
+                    </div>
+                    <h3>Creative</h3>
+                    <p> lorem ipsum sit dolor amet lorem ipsum sit dolor ametlorem ipsum sit dolor ametlorem ipsum sit dolor ametlorem ipsum sit dolor amet</p>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <hr>
+
+        <!-- Portofolio Section -->
+        <section id="portofolio">
+            <h1 class="text-center " data-aos="fade-in">
+                &#x1F469;&#x200D;&#x1F4BB; Recent Projects
+            </h1>
+            <!-- project  -->
+            <div class="row">
+                <div class="col-6">
+                    <div class="card bg-grey" data-aos="flip-left">
+                        <div>
+                            <h2 class="text-left" data-aos="fade-in">
+                                Villa <span class="text-highlight">Booking </span> Website
+                            </h2>                            
+                            <p class="text-justify">
+                                Villa SituLengkong is a website-based application that supports an online booking system.
+                                online booking system. This website will provide convenience for customers in finding
+                                complete information about facilities, prices, and villa availability. In addition, this website can also
+                                increase the visibility of Villa Situ Lengkong by integrating social media, such as
+                                Instagram and Facebook, so that it can reach more potential customers.
+                           </p>
+                        </div>
+                        <div class="container">
+                            <img src="img/web-villa.png" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div class="text" style="color: rgb(32, 34, 75);">HTML, CSS, JavaScript, Tailwind
+                                <a href="https://music.youtube.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                                <a href="https://github.com/destiknrr/vecalculate.git" target="_blank" class="fa-brands fa-github"></a>
+                              </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card bg-grey" data-aos="flip-left">
+                        <div>
+                            <h2> <span class="text-highlight"> Vecal</span>culate</h2>
+                            <p class="text-justify">
+                                Calculate your multiplication of two vectors and matrix determinant problems quickly. 
+                                This website makes it easy for you to calculate the multiplication of two vectors and the determinant of 
+                                the matrix along with the explanation of the material.
+                           </p>
+                           <br>
+                           <br>
+                            <br>
+                        </div>
+                        <div class="container">
+                            <img src="img/web-vecalculate.png" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div class="text" style="color: rgb(32, 34, 75);">
+                                HTML, CSS, JavaScript, Tailwind
+                                <a href="https://music.youtube.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                                <a href="https://github.com/destiknrr/web-villa.git" target="_blank" class="fa-brands fa-github"></a>
+                            </div>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            <!-- end project  -->
+
+            <br>
+
+            <!-- review  -->
+            <h1 class="text-center " data-aos="fade-in">
+                &#128226; What Client Say?
+            </h1>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="img/rating.png" class="img-reponsive img-rate">
+                </div>
+            </div>
+            <!-- review  -->
+            
+            <!-- Certificationn -->
+            <h2 class="text-center" data-aos="fade-in"> &#128204; Certification  </h2>
+            <div class="row">
+                <div class="col-3" data-aos="flip-left">
+                    <div class="container">
+                        <img src="img/course-sql.png" alt="Avatar" class="image" style="border-radius: 10px;">
+                        <div class="overlay">
+                            <div style="margin-left: 20px;">
+                                <h4>Learn MySQL</h4>
+                                <p>Issued by: DICODING</p>
+                                <p>Issued on: September 2023</p>
+                            </div>
+                            <div class="icon-arrow" style="color: rgb(32, 34, 75)">
+                                <a href="pdf/course-sql.pdf" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-3" data-aos="flip-left">
+                    <div class="container">
+                        <img src="img/course-sql.png" alt="Avatar" class="image" style="border-radius: 10px;">
+                        <div class="overlay">
+                            <div style="margin-left: 20px;">
+                                <h4>Certification Microsoft Excel</h4>
+                                <p>Issued by: DICODING</p>
+                                <p>Issued on: September 2023</p>
+                            </div>
+                            <div class="icon-arrow" style="color: rgb(32, 34, 75)">
+                                <a href="https://music.youtube.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-3" data-aos="flip-left">
+                    <div class="container">
+                        <img src="img/course-sql.png" alt="Avatar" class="image" style="border-radius: 10px;">
+                        <div class="overlay">
+                            <div style="margin-left: 20px;">
+                                <h4>Certification Microsoft Excel</h4>
+                                <p>Issued by: DICODING</p>
+                                <p>Issued on: September 2023</p>
+                            </div>
+                            <div class="icon-arrow" style="color: rgb(32, 34, 75)">
+                                <a href="https://music.youtube.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-3" data-aos="flip-left">
+                    <div class="container">
+                        <img src="img/course-sql.png" alt="Avatar" class="image" style="border-radius: 10px;">
+                        <div class="overlay">
+                            <div style="margin-left: 20px;">
+                                <h4>Certification Microsoft Excel</h4>
+                                <p>Issued by: DICODING</p>
+                                <p>Issued on: September 2023</p>
+                            </div>
+                            <div class="icon-arrow" style="color: rgb(32, 34, 75)">
+                                <a href="https://music.youtube.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- end certification  -->
+            </div>
+        </section>
+         <!-- End Portofolio Section -->
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <!-- contact  -->
+            <h1 class="text-center" data-aos="fade-in"> &#128222; Find Me On</h1>
+            <div class="row " data-aos="fade-right">
+                <div class="col-2">
+                    <div class="card-contact icon-contact bg-grey">
+                        <a href="https://www.instagram.com/destiknrr/#" target="_blank" class="fa-brands fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-contact icon-contact text-center bg-grey">
+                        <a href="https://github.com/destiknrr" target="_blank" class="fa-brands fa-github"></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-contact icon-contact text-center bg-grey">
+                        <a href="www.linkedin.com/in/destinurdatillah" target="_blank" class="fa-brands fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-contact icon-contact text-center bg-grey">
+                        <a href="https://www.tiktok.com/@othersidesed?is_from_webapp=1&sender_device=pc" target="_blank" class="fa-brands fa-tiktok"></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-contact icon-contact text-center bg-grey">
+                        <a href="mailto:destinurdatillah@gmail.com" target="_blank" class="fa-solid fa-envelope"></a>                
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card-contact icon-contact text-center bg-grey">
+                        <a href="https://discord.com/" target="_blank" class="fa-brands fa-discord"></a>                
+                    </div>
+                </div>
+            </div>
+            <!-- end contact -->
+
+            <br>
+
+            <!-- form  -->
+                
+            <!-- end form  -->
+        </section>
+        <!-- End Contact Section -->
+        <hr/>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-copy">&copy; 2025 Desti Nurdatillah Services. All Rights Reserved.</p>
+        <div class="footer-container">
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Policy Links -->
+            <div class="footer-section">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-use.html">Terms of Use</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section footer-section-fit ">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:destinurdatillah@gmail.com">destinurdatillah@gmail.com</a></p>
+                <p>Phone: <a href="https://wa.me/6289506892023" target="_blank" rel="noopener noreferrer">+62 895 0689 2023</a></p>
+                <p>Address: Kota Tasikmalaya</p>
+            </div>
+
+            <!-- Contact Links -->
+            <div class="footer-section footer-section-fit">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://github.com/destiknrr" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="mailto:destinurdatillah@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/destiknrr" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+        </script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

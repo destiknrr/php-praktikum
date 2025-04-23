@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Desti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.21.0/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <header>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="about.html">About Me &#129321;</a></li>
+                <li><a href="education.html">Portofolio  &#128196;</a></li>
+                <li><a href="contact.html">Contact Me &#128222;</a></li>
+            </ul>
+            <div class="logo" data-aos="fade-up" data-aos-delay="50">
+                <a href="index.html">
+                    <img src="img/logo.png" height="25">
+                </a>
+            </div>
+            <ul>
+                <li class="hideOnMobile" data-aos="fade-up" data-aos-delay="200"><a href="about.html">About Me &#129321;</a></li>
+                <li class="hideOnMobile" data-aos="fade-up" data-aos-delay="300"><a href="education.html">Portofolio &#128196;</a></li>
+                <li class="hideOnMobile active" data-aos="fade-up" data-aos-delay="400"><a href="contact.html">Contact Me &#128222;</a></li>
+                <li class="menu-bottom" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul> 
+        </header>
+    </nav>
+    <!-- end navbar -->
+
+    <main>
+        <!-- Contact Section -->
+        <section>
+            <h1 class="text-center title" data-aos="fade-in"> &#128222; Find Me On</h1>
+            <!-- Contact Form -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="row " data-aos="fade-right">
+                        <div class="col-6">
+                            <div class="card-contact icon-contact bg-grey">
+                                <a href="https://www.instagram.com/destiknrr/#" target="_blank" class="fa-brands fa-instagram"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-contact icon-contact text-center bg-grey">
+                                <a href="https://github.com/destiknrr" target="_blank" class="fa-brands fa-github"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-contact icon-contact text-center bg-grey">
+                                <a href="www.linkedin.com/in/destinurdatillah" target="_blank" class="fa-brands fa-linkedin"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-contact icon-contact text-center bg-grey">
+                                <a href="https://www.tiktok.com/@othersidesed?is_from_webapp=1&sender_device=pc" target="_blank" class="fa-brands fa-tiktok"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-contact icon-contact text-center bg-grey">
+                                <a href="mailto:destinurdatillah@gmail.com" target="_blank" class="fa-solid fa-envelope"></a>                
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-contact icon-contact text-center bg-grey">
+                                <a href="https://discord.com/" target="_blank" class="fa-brands fa-discord"></a>                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="container-form" data-aos="fade-left">
+                        <h3>Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Your Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Type your message here"></textarea>
+                            </div>
+                            <button type="submit" class="send-btn">Send Message</button>
+                        </form>
+                        <p id="responseMessage"></p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Notification -->
+            <div id="notification" class="popup hidden">
+                <p id="notificationMessage"></p>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+    </main>
+    <br>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-copy">&copy; 2025 Desti Nurdatillah Services. All Rights Reserved.</p>
+        <div class="footer-container">
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Policy Links -->
+            <div class="footer-section">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-use.html">Terms of Use</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section footer-section-fit ">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:destinurdatillah@gmail.com">destinurdatillah@gmail.com</a></p>
+                <p>Phone: <a href="https://wa.me/6289506892023" target="_blank" rel="noopener noreferrer">+62 895 0689 2023</a></p>
+                <p>Address: Kota Tasikmalaya</p>
+            </div>
+
+            <!-- Contact Links -->
+            <div class="footer-section footer-section-fit">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://github.com/destiknrr" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="mailto:destinurdatillah@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/destiknrr" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>
